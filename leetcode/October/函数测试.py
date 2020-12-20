@@ -47,6 +47,12 @@ x1 = CA()
 x1.a()
 x2 = CB()
 x2.a()
-
+ss = ['a','b','c']
+print('a' in ss)
+print('d' not in ss)
+print('a' not in ss)
+print(ord('a') - 97)
+li = [1,2,3,4,5,6]
+print(li.index(5,0,5))
 
 
