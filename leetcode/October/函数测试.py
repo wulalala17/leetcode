@@ -55,4 +55,5 @@ print(ord('a') - 97)
 li = [1,2,3,4,5,6]
 print(li.index(5,0,5))
 
-
+for i in range(1, 1):
+    print("测试测试")
