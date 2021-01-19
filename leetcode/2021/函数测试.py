@@ -9,4 +9,8 @@ print(judge(5))
 print(judge(6))
 print(judge(7))
 print(judge(8))
-
+n = 5
+p1 = list(range(n))
+p2 = [i for i in range(n)]
+print(p1)
+print(p2)
