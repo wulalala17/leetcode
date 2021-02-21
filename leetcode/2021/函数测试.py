@@ -14,3 +14,5 @@ p1 = list(range(n))
 p2 = [i for i in range(n)]
 print(p1)
 print(p2)
+a = [1,2,3,3,4,110,110,110]
+print(max(a, key=a.count))
