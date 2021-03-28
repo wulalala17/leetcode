@@ -26,14 +26,48 @@ def minCut(s):
             g[i][j] = (s[i] == s[j]) and g[i + 1][j - 1]
     print(g)
 
-def minCut2(s):
-    n = len(s)
-    g = [[True] * n for _ in range(n)]
+# def minCut2(s):
+#     n = len(s)
+#     g = [[True] * n for _ in range(n)]
+#
+#     for i in range(0, n):
+#         for j in range(i + 1, n):
+#             g[i][j] = (s[i] == s[j]) and g[i + 1][j - 1]
+#     print(g)
+#
+# minCut("abcddcba")
+# minCut2("abcddcba")
 
-    for i in range(0, n):
-        for j in range(i + 1, n):
-            g[i][j] = (s[i] == s[j]) and g[i + 1][j - 1]
-    print(g)
 
-minCut("abcddcba")
-minCut2("abcddcba")
+
+def letterCombinations(digits):
+    if not digits:
+        return list()
+
+    phoneMap = {
+        "2": "abc",
+        "3": "def",
+        "4": "ghi",
+        "5": "jkl",
+        "6": "mno",
+        "7": "pqrs",
+        "8": "tuv",
+        "9": "wxyz",
+    }
+
+    def backtrack(index: int):
+        if index == len(digits):
+            combinations.append("".join(combination))
+        else:
+            digit = digits[index]
+            for letter in phoneMap[digit]:
+                combination.append(letter)
+                backtrack(index + 1)
+                combination.pop()
+
+    combination = list()
+    combinations = list()
+    backtrack(0)
+    return combinations
+
+print(letterCombinations("234"))
