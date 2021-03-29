@@ -71,3 +71,16 @@ def letterCombinations(digits):
     return combinations
 
 print(letterCombinations("234"))
+
+a = [1,2,3,4,5]
+b = [1,2,3,4,6]
+c = [1,2,3,4,5]
+print(a==c)
+ss = ''
+ss += '1'
+s1 = 'abc'
+ss+=s1
+s3 = '(' + ss +')'
+print(ss)
+print('ab' in ss)
+print(s3)
