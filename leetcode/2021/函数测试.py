@@ -84,3 +84,7 @@ s3 = '(' + ss +')'
 print(ss)
 print('ab' in ss)
 print(s3)
+
+r1 = [4,1,4]
+r2 = [4,4,1]
+print(sorted(r1) == sorted(r2))
