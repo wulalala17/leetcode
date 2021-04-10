@@ -1,5 +1,7 @@
 def judge(num):
     return True if num == 0 or num & (num - 1) == 0 else False
+
+
 print(judge(0))
 print(judge(1))
 print(judge(2))
@@ -14,8 +16,9 @@ p1 = list(range(n))
 p2 = [i for i in range(n)]
 print(p1)
 print(p2)
-a = [1,2,3,3,4,110,110,110]
+a = [1, 2, 3, 3, 4, 110, 110, 110]
 print(max(a, key=a.count))
+
 
 def minCut(s):
     n = len(s)
@@ -25,6 +28,7 @@ def minCut(s):
         for j in range(i + 1, n):
             g[i][j] = (s[i] == s[j]) and g[i + 1][j - 1]
     print(g)
+
 
 # def minCut2(s):
 #     n = len(s)
@@ -37,7 +41,6 @@ def minCut(s):
 #
 # minCut("abcddcba")
 # minCut2("abcddcba")
-
 
 
 def letterCombinations(digits):
@@ -70,21 +73,28 @@ def letterCombinations(digits):
     backtrack(0)
     return combinations
 
+
 print(letterCombinations("234"))
 
-a = [1,2,3,4,5]
-b = [1,2,3,4,6]
-c = [1,2,3,4,5]
-print(a==c)
+a = [1, 2, 3, 4, 5]
+b = [1, 2, 3, 4, 6]
+c = [1, 2, 3, 4, 5]
+print(a == c)
 ss = ''
 ss += '1'
 s1 = 'abc'
-ss+=s1
-s3 = '(' + ss +')'
+ss += s1
+s3 = '(' + ss + ')'
 print(ss)
 print('ab' in ss)
 print(s3)
 
-r1 = [4,1,4]
-r2 = [4,4,1]
+r1 = [4, 1, 4]
+r2 = [4, 4, 1]
 print(sorted(r1) == sorted(r2))
+for i in range(1, 5):
+    for j in range(1, 5):
+        if j != 4:
+            print(i * j, end=" ")
+        else:
+            print(i * j)
