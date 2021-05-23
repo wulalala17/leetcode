@@ -1,3 +1,6 @@
+import math
+
+
 def judge(num):
     return True if num == 0 or num & (num - 1) == 0 else False
 
@@ -98,3 +101,9 @@ for i in range(1, 5):
             print(i * j, end=" ")
         else:
             print(i * j)
+x1 = 2
+x2 = 2
+print(int(x1/x2))
+math.ceil(3)
+print(math.ceil(3))
+print(math.ceil(3.1))
