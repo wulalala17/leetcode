@@ -107,4 +107,3 @@ print(int(x1/x2))
 math.ceil(3)
 print(math.ceil(3))
 print(math.ceil(3.1))
-
