@@ -107,3 +107,27 @@ print(int(x1/x2))
 math.ceil(3)
 print(math.ceil(3))
 print(math.ceil(3.1))
+
+
+
+class People:
+    def showA(self):
+        print('showA')
+        self.showB()
+
+    def showB(self):
+        print('showB')
+
+class Teacher(People):
+    def showB(self):
+        print('teacher showB')
+
+t = Teacher()
+t.showA()
+
+def sums(x):
+    s = 0
+    while x:
+        s += x % 10
+        x = x // 10
+    return s
