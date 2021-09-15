@@ -51,7 +51,6 @@ class Solution {//双指针加排序，重写排序好蠢，才知道有Comparat
 				if (s1.length() != s2.length()) {
 					return s1.length() < s2.length()?-1:1;
 				}
-				//小于同理
 				else
                     return s1.compareTo(s2);
 			}
